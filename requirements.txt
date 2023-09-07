@@ -1,0 +1,5 @@
+ctransformers
+streamlit
+streamlit-server-state
+Pillow
+transformers
