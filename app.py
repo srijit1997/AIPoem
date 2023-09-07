@@ -12,7 +12,7 @@ from transformers import AutoProcessor
 from transformers import AutoModelForCausalLM as tAMCL
 import re
 
-checkpoint = r"mic-git-base\git-base"
+checkpoint = "microsoft\git-base"
 with server_state_lock["processor"]:  # Lock the "count" state for thread-safety
     if "processor" not in server_state:
         server_state.processor = AutoProcessor.from_pretrained(checkpoint)
@@ -23,7 +23,7 @@ with server_state_lock["model"]:  # Lock the "count" state for thread-safety
         
 def ChatModel(temperature, top_p):
     return ctAMCL.from_pretrained(
-        r'llama-2-ggml\Llama-2-7B-Chat-GGML', 
+        'TheBloke/Llama-2-7B-Chat-GGML', 
         model_type='llama',
         temperature=temperature, 
         top_p = top_p)
