@@ -11,8 +11,11 @@ from PIL import Image
 from transformers import AutoProcessor
 from transformers import AutoModelForCausalLM as tAMCL
 import re
+from os.path import dirname
 
-checkpoint = "microsoft\git-base"
+checkpoint = f'{dirname(__file__)}\mic-git-base\git-base'
+llama_checkpoint = f'{dirname(__file__)}\llama-2-ggml\Llama-2-7B-Chat-GGML'
+
 with server_state_lock["processor"]:  # Lock the "count" state for thread-safety
     if "processor" not in server_state:
         server_state.processor = AutoProcessor.from_pretrained(checkpoint)
@@ -23,7 +26,7 @@ with server_state_lock["model"]:  # Lock the "count" state for thread-safety
         
 def ChatModel(temperature, top_p):
     return ctAMCL.from_pretrained(
-        'TheBloke/Llama-2-7B-Chat-GGML', 
+        llama_checkpoint, 
         model_type='llama',
         temperature=temperature, 
         top_p = top_p)
