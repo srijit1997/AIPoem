@@ -3,4 +3,3 @@ streamlit
 streamlit-server-state
 Pillow
 transformers
-os
