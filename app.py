@@ -40,17 +40,22 @@ with server_state_lock["chat_model"]:  # Lock the "count" state for thread-safet
 
 st.title(":grey[_AI_]:green[Poet]")
 
-image_file = st.camera_input("Show me a good view that makes me lost") or st.file_uploader("**_OR_**    Show me a good picture that ignites my thoughts",type=['png','jpeg','jpg']) 
+def capture_photo():
+    capture = st.camera_input("Show me a good view that makes me lost")
+    if "rerun" not in st.session_state:
+        with st.spinner("Wait for me to bring my notebook and pen. Don't click photo yet!"):
+            time.sleep(10)
+        st.session_state.rerun = 1
+        st.experimental_rerun()
+    return capture
+
+image_file =  capture_photo() or st.file_uploader("**_OR_**    Show me a good picture that ignites my thoughts",type=['png','jpeg','jpg']) 
 
 def load_image(image_file):
     img = Image.open(image_file)
     return img
+
     
-if "rerun" not in st.session_state:
-    with st.spinner("Wait for me to bring my notebook and pen. Don't click photo yet!"):
-        time.sleep(10)
-    st.session_state.rerun = 1
-    st.experimental_rerun()
 
 if image_file is not None:
     file_details = {"FileName":image_file.name,"FileType":image_file.type}
