@@ -1,5 +1,5 @@
 ---
-title: AIPoet - click picture, get poems
+title: AIPoet - click scenery, get poems
 emoji: 🏃
 colorFrom: yellow
 colorTo: indigo
