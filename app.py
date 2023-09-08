@@ -12,6 +12,7 @@ from transformers import AutoProcessor
 from transformers import AutoModelForCausalLM as tAMCL
 import re
 from os.path import dirname
+import time
 
 
 checkpoint = f'{dirname(__file__)}/mic--git-base/git-base'
@@ -44,20 +45,23 @@ image_file = st.camera_input("Show me a good view that makes me lost") or st.fil
 def load_image(image_file):
     img = Image.open(image_file)
     return img
-
+    
 if "rerun" not in st.session_state:
+    with st.spinner("Wait for me to bring my notebook and pen. Don't click photo yet!"):
+        time.sleep(10)
     st.session_state.rerun = 1
     st.experimental_rerun()
 
 if image_file is not None:
     file_details = {"FileName":image_file.name,"FileType":image_file.type}
     img = load_image(image_file)
-    device = "cpu"
-    inputs = server_state.processor(images=img, return_tensors="pt").to(device)
-    pixel_values = inputs.pixel_values
-    generated_ids = server_state.model.generate(pixel_values=pixel_values, max_length=50)
-    generated_caption = server_state.processor.batch_decode(generated_ids, skip_special_tokens=True)[0]
-    
+    with st.spinner("I'm drowning in the view..."):
+        device = "cpu"
+        inputs = server_state.processor(images=img, return_tensors="pt").to(device)
+        pixel_values = inputs.pixel_values
+        generated_ids = server_state.model.generate(pixel_values=pixel_values, max_length=50)
+        generated_caption = server_state.processor.batch_decode(generated_ids, skip_special_tokens=True)[0]
+        
     Type1 = ''
 
     type1 = st.radio(
