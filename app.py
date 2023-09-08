@@ -38,7 +38,7 @@ with server_state_lock["chat_model"]:  # Lock the "count" state for thread-safet
 
 st.title(":grey[_AI_]:green[Poet]")
 
-image_file = st.camera_input("Show me a good view that makes me lost") or st.file_uploader("Show me a good picture that ignites my thoughts",type=['png','jpeg','jpg']) 
+image_file = st.camera_input("Show me a good view that makes me lost") or st.file_uploader("**_OR_**    Show me a good picture that ignites my thoughts",type=['png','jpeg','jpg']) 
 
 def load_image(image_file):
     img = Image.open(image_file)
