@@ -13,6 +13,10 @@ from transformers import AutoModelForCausalLM as tAMCL
 import re
 from os.path import dirname
 
+if 'rerun' not in st.session_state:
+    st.experimental_rerun()
+    st.session_state.rerun = 1
+
 checkpoint = f'{dirname(__file__)}/mic--git-base/git-base'
 llama_checkpoint = f'{dirname(__file__)}/llama--2-ggml/Llama-2-7B-Chat-GGML'
 
