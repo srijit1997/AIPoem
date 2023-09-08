@@ -1,6 +1,6 @@
 ---
-title: Aip
-emoji: 😻
+title: AIPoet - Prompt picture, get poems
+emoji: 🏃
 colorFrom: yellow
 colorTo: indigo
 sdk: streamlit
