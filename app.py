@@ -13,9 +13,6 @@ from transformers import AutoModelForCausalLM as tAMCL
 import re
 from os.path import dirname
 
-if "rerun" not in st.session_state:
-    st.session_state.rerun = 1
-    st.experimental_rerun()
 
 checkpoint = f'{dirname(__file__)}/mic--git-base/git-base'
 llama_checkpoint = f'{dirname(__file__)}/llama--2-ggml/Llama-2-7B-Chat-GGML'
@@ -47,6 +44,10 @@ image_file = st.camera_input("Show me a good view that makes me lost") or st.fil
 def load_image(image_file):
     img = Image.open(image_file)
     return img
+
+if "rerun" not in st.session_state:
+    st.session_state.rerun = 1
+    st.experimental_rerun()
 
 if image_file is not None:
     file_details = {"FileName":image_file.name,"FileType":image_file.type}
