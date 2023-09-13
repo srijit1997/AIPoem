@@ -36,7 +36,9 @@ Continued on CMD
 ## Acknowledging
 
 [Microsoft](https://huggingface.co/microsoft/git-base)
+
 [Meta](https://ai.meta.com/llama/)
+
 [TheBloke](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML)
 
 
