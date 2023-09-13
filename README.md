@@ -33,5 +33,11 @@ Continued on CMD
 
 ![readme_screen_pics](https://github.com/srijit1997/aipoet/assets/84009525/fa85c060-4e46-4849-88c2-e511543db334)
 
+## Acknowledging
+
+[Microsoft](https://huggingface.co/microsoft/git-base)
+[Meta](https://ai.meta.com/llama/)
+[TheBloke](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML)
+
 
 
