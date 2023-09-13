@@ -20,8 +20,8 @@ Go to CMD
 4 .
 Feel free to install requisites on other CLI, preferably Anaconda Prompt
 
-```cd path\to\aipoet
-pip install -r requirements.txt```
+```cd path\to\aipoet```
+```pip install -r requirements.txt```
 
 5 .
 Continued on CMD
