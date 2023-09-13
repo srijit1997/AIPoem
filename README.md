@@ -1,13 +1,1 @@
----
-title: AIPoet - click scenery, get poems
-emoji: 🏃
-colorFrom: yellow
-colorTo: indigo
-sdk: streamlit
-sdk_version: 1.26.0
-app_file: app.py
-pinned: false
-license: llama2
----
-
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+![image](https://github.com/srijit1997/aipoet/assets/84009525/3913a577-7f27-4e8a-929e-6ec2c8b0c6af)
