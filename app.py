@@ -27,8 +27,8 @@ with st.sidebar:
 
 #2. Data needed for one time loading stored in server-level variables
 
-checkpoint = f'{dirname(__file__)}/mic--git-base/git-base'
-llama_checkpoint = f'{dirname(__file__)}/llama--2-ggml/Llama-2-7B-Chat-GGML'
+checkpoint = 'microsoft/git-base'
+llama_checkpoint = 'TheBloke/Llama-2-7B-Chat-GGML'
 
 with server_state_lock["processor"]:  # Lock the "count" state for thread-safety
     if "processor" not in server_state:
