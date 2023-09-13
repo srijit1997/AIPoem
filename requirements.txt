@@ -4,3 +4,5 @@ streamlit-server-state
 Pillow
 transformers
 torch
+pandas
+langchain
