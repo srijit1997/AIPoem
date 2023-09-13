@@ -29,4 +29,9 @@ Continued on CMD
 
 ```python -m streamlit run app.py```
 
+## Interface
+
+![readme_screen_pics](https://github.com/srijit1997/aipoet/assets/84009525/fa85c060-4e46-4849-88c2-e511543db334)
+
+
 
