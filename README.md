@@ -31,7 +31,7 @@ Continued on CMD
 
 ## Interface
 
-![readme_screen_pics](https://github.com/srijit1997/aipoet/assets/84009525/fa85c060-4e46-4849-88c2-e511543db334)
+![interface-image](https://github.com/srijit1997/aipoet/assets/84009525/e3317fb5-7966-426b-acc1-cbbc4dabd987)
 
 ## Acknowledging
 
