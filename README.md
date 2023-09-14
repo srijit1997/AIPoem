@@ -1,4 +1,4 @@
-![workflow-image](https://drive.google.com/file/d/1AGdJC-Vu6xWCbMgAWsDR3wkL-C4L2oeq/view?usp=sharing)
+![workflow-image](https://github.com/srijit1997/aipoet/assets/84009525/73989996-4bf2-4dc9-8677-69c96c4c8a39)
 
 # AIPoet - Now, AI can see you and your world and write poems.
 
