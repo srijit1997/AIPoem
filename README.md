@@ -7,10 +7,15 @@ A workflow on top of transformer architecture to mimic poetic outcomes of humans
 Working redirect: [Streamlit Community Cloud](https://aipoetofficial.streamlit.app/) / [Huggingface Space](https://srijitpanja-aip.hf.space/)
 
 • Open Source
+
 • Realtime
+
 • No GPU
+
 • No recurring API cost
+
 • Easy UI
+
 • No user data storage
 
 ## Steps to replicate locally
